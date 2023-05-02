@@ -17,11 +17,13 @@ function App() {
 
     // local storage
     const cartData = JSON.parse(localStorage.getItem('cartItems'));
-    dispatch(cartActions.replaceCart({
-      items: cartData.items || [],
-      totalPrice: cartData.totalPrice,
-      totalQuantity: cartData.totalQuantity,
-    }));
+    if (cartData) { 
+      dispatch(cartActions.replaceCart({
+        items: cartData.items,
+        totalPrice: cartData.totalPrice,
+        totalQuantity: cartData.totalQuantity,
+      }));
+    }
   }, [dispatch]);
 
   return (
