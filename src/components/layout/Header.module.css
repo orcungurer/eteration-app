@@ -1,0 +1,24 @@
+.header {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+  padding: 0 5%;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 25%);
+}
+
+@media screen and (max-width: 1299px) {
+  .header {
+    padding: 0 2%;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .header {
+    padding: 0 5%;
+  }
+}

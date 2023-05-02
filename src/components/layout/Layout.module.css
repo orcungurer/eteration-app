@@ -1,0 +1,22 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 5%;
+}
+
+/* .main > * {
+  flex-basis: calc(25% - 10px);
+} */
+
+@media screen and (max-width: 1299px) {
+  .main {
+    padding: 4rem 2%;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .main {
+    padding: 4rem 5%;
+    flex-direction: column;
+  }
+}
