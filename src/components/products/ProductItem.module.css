@@ -1,0 +1,59 @@
+.item {
+  cursor: pointer;
+  width: calc(25% - 10px);
+  /* margin-bottom: 1rem; */
+}
+
+.item:hover img {
+  transform: scale(1.02);
+}
+
+.item img {
+  width: 100%;
+  border-radius: 0.25rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card:hover {
+  background-color: #f2f2f2;
+}
+
+.price {
+  display: flex;
+  justify-content: flex-end;
+  /* margin: 0.5rem 0; */
+}
+
+.name {
+  font-weight: 600;
+}
+
+.name, .brand {
+  margin: 0;
+}
+
+.brand {
+  font-size: 0.8rem;
+}
+
+.actions {
+  display: flex;
+}
+
+.actions button {
+  width: 100%;
+}
+
+.name,
+.brand,
+.actions button {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
