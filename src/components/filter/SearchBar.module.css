@@ -1,0 +1,30 @@
+.searchbar {
+  padding: 0.5rem;
+  border-radius: 1.5rem;
+  width: 20rem;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+}
+
+.searchbar label {
+  display: flex;
+}
+
+.searchbar input:focus {
+  outline: none;
+}
+
+.searchbar input {
+  border: none;
+}
+
+@media screen and (max-width: 499px) {
+  .searchbar {
+    width: 7.5rem;
+  }
+
+  .searchbar input {
+    max-width: 5rem;
+  }
+}
