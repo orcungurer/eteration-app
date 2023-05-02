@@ -1,0 +1,15 @@
+.filter-item {
+  margin: 1rem 0 1rem 1rem;
+}
+
+.filter-item h3 {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 0.9rem;
+}
+
+.filter-item-inner {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+}
