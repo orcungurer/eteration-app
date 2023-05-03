@@ -6,6 +6,11 @@
   cursor: default;
 }
 
+.button:hover {
+  color: inherit;
+  background-color: inherit;
+}
+
 .button span {
   margin: 0 0.25rem;
   font-size: 0.8rem;
@@ -14,4 +19,15 @@
 .icon {
   width: 1.35rem;
   height: 1.35rem;
+}
+
+@media screen and (max-width: 499px) {
+  .button {
+    padding: 0;
+    border: none;
+  }
+
+  .button span {
+    margin: 0 0.15rem;
+  }
 }
