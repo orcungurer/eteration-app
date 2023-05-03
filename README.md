@@ -1,3 +1,7 @@
+[![CodeFactor](https://www.codefactor.io/repository/github/orcungurer/eteration-app/badge)](https://www.codefactor.io/repository/github/orcungurer/eteration-app)
+
+### [DEMO on Vercel](https://eteration-app.vercel.app/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
