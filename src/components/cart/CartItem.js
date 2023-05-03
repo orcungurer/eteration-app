@@ -11,11 +11,13 @@ const CartItem = (props) => {
   };
 
   const addItemToCartHandler = () => {
-    dispatch(cartActions.addItemToCart({
-      id,
-      name,
-      price: +price,
-    }));
+    dispatch(
+      cartActions.addItemToCart({
+        id,
+        name,
+        price: +price,
+      })
+    );
   };
 
   return (
@@ -25,9 +27,16 @@ const CartItem = (props) => {
         <p className={classes.total}>${total.toFixed(2)}</p>
       </div>
       <div className={classes.actions}>
-        <button onClick={removeItemFromCartHandler} className={classes.decrease}>-</button>
+        <button
+          onClick={removeItemFromCartHandler}
+          className={classes.decrease}
+        >
+          -
+        </button>
         <span>{quantity}</span>
-        <button onClick={addItemToCartHandler} className={classes.increase}>+</button>
+        <button onClick={addItemToCartHandler} className={classes.increase}>
+          +
+        </button>
       </div>
     </li>
   );

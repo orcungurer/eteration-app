@@ -40,9 +40,7 @@ const Cart = () => {
 
   return (
     <div className={classes.cart}>
-      <Card>
-        {content}
-      </Card>
+      <Card>{content}</Card>
     </div>
   );
 };

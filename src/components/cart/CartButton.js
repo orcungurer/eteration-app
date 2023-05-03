@@ -9,9 +9,7 @@ const CartButton = () => {
       <span className={classes.icon}>
         <CartIcon />
       </span>
-      <span className={classes.badge}>
-        ${totalPrice.toFixed(2)}
-      </span>
+      <span className={classes.badge}>${totalPrice.toFixed(2)}</span>
     </button>
   );
 };

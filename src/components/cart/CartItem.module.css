@@ -7,7 +7,8 @@
   border-bottom: 1px solid #eee;
 }
 
-.name, .total {
+.name,
+.total {
   margin: 0;
 }
 
@@ -30,7 +31,7 @@
   background-color: black;
   border: 1px solid black;
   padding: 0.5rem 0.75rem;
-  color: white
+  color: white;
 }
 
 .increase {

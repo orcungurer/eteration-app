@@ -13,7 +13,7 @@ const uiSlice = createSlice({
     },
     hideProductDetails(state) {
       state.productDetails = null;
-    }
+    },
   },
 });
 

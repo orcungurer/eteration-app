@@ -34,7 +34,8 @@
   font-weight: 600;
 }
 
-.name, .brand {
+.name,
+.brand {
   margin: 0;
 }
 

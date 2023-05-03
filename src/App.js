@@ -16,13 +16,15 @@ function App() {
     dispatch(fetchProductData());
 
     // local storage
-    const cartData = JSON.parse(localStorage.getItem('cartItems'));
-    if (cartData) { 
-      dispatch(cartActions.replaceCart({
-        items: cartData.items,
-        totalPrice: cartData.totalPrice,
-        totalQuantity: cartData.totalQuantity,
-      }));
+    const cartData = JSON.parse(localStorage.getItem("cartItems"));
+    if (cartData) {
+      dispatch(
+        cartActions.replaceCart({
+          items: cartData.items,
+          totalPrice: cartData.totalPrice,
+          totalQuantity: cartData.totalQuantity,
+        })
+      );
     }
   }, [dispatch]);
 
@@ -34,9 +36,7 @@ function App() {
           <Products />
         </Fragment>
       )}
-      {showProductDetails && (
-        <ProductDetail />
-      )}
+      {showProductDetails && <ProductDetail />}
       <Cart />
     </Layout>
   );

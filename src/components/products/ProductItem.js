@@ -10,21 +10,25 @@ const ProductItem = (props) => {
 
   const addToCartHandler = (event) => {
     event.stopPropagation();
-    dispatch(cartActions.addItemToCart({
-      id,
-      name,
-      price: +price,
-    }));
+    dispatch(
+      cartActions.addItemToCart({
+        id,
+        name,
+        price: +price,
+      })
+    );
   };
 
   const showProductDetailsHandler = () => {
-    dispatch(uiActions.showProductDetails({
-      id,
-      image,
-      name,
-      price,
-      description,
-    }));
+    dispatch(
+      uiActions.showProductDetails({
+        id,
+        image,
+        name,
+        price,
+        description,
+      })
+    );
   };
 
   return (
@@ -34,7 +38,9 @@ const ProductItem = (props) => {
         <div className={classes.price}>${price}</div>
         <div className={classes.product}>
           <p className={classes.name}>{name}</p>
-          <p className={classes.brand}>{brand}-{model}</p>
+          <p className={classes.brand}>
+            {brand}-{model}
+          </p>
         </div>
         <div className={classes.actions}>
           <button onClick={addToCartHandler}>Add to Cart</button>

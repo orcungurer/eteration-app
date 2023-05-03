@@ -13,7 +13,9 @@ const SearchBar = () => {
 
   return (
     <div className={classes.searchbar}>
-      <label htmlFor="search"><SearchBarIcon /></label>
+      <label htmlFor="search">
+        <SearchBarIcon />
+      </label>
       <input
         type="text"
         id="search"
